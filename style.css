@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+}
+
+.produto img {
+    max-width: 100%;
+    margin: 16px;
+    width: 225px;
+    height: 225px;
+}
+
+.loja h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.loja img {
+    width: 400px;
+    height: 320px;
+}
+
+.conteudo h2 {
+    margin: 16px;
+    font-size: 30px;
+}
+
+.conteudo h3{
+    margin-right: 24px;
+    margin-top: 30px;
+}
+
+.loja {
+    margin-bottom: 56px;
+}
+
+.loja .produto a {
+    display: flex;
+    font-size: 1.5em;
+}
+
+.loja .produto img {
+    margin-right: 8px;
+}
+
+.loja h2 {
+    display: flex;
+}
+
+#sobre-a-loja h2 {
+    margin: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+section h2 {
+    margin-bottom: 32px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4,24.5%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 767px) {
+    .produtos {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .loja .produto a {
+        display: block;
+        font-size: 1em;
+    }
+
+    .loja .produto img {
+        margin-right: 0px;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produtos .produto {
+        margin-bottom: 32px;
+    }
+
+    header .container {
+       flex-direction: column;
+    }   
+}
+
+@media  screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .loja .produto a {
+        font-size: 1.2em;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
